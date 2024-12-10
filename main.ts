@@ -1,0 +1,11 @@
+microIoT.microIoT_initDisplay()
+basic.showIcon(IconNames.Giraffe)
+microIoT.microIoT_setIndexColor(PIN.P1, 0, 11, 0xff0000)
+basic.pause(100)
+microIoT.microIoT_setIndexColor(PIN.P1, 0, 11, 0x7f00ff)
+basic.pause(100)
+microIoT.microIoT_setIndexColor(PIN.P1, 0, 11, 0x7f00ff)
+basic.forever(function () {
+    microIoT.microIoT_setIndexColor(PIN.P1, 0, 11, microIoT.microIoT_rgb(randint(0, 255), randint(0, 255), randint(0, 255)))
+    basic.pause(500)
+})

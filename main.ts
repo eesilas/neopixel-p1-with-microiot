@@ -1,5 +1,6 @@
 microIoT.microIoT_initDisplay()
 basic.showIcon(IconNames.Giraffe)
+microIoT.microIoT_setBrightness(PIN.P15, 75)
 microIoT.microIoT_setIndexColor(PIN.P1, 0, 15, 0xff0000)
 basic.pause(1000)
 microIoT.microIoT_setIndexColor(PIN.P1, 0, 15, 0x00ff00)
